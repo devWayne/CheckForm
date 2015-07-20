@@ -1,0 +1,19 @@
+{
+  "name": "check.js",
+  "version": "0.1.0",
+  "description": "check form data",
+  "main": "check.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devWayne/check.js.git"
+  },
+  "author": "Vi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devWayne/check.js/issues"
+  },
+  "homepage": "https://github.com/devWayne/check.js#readme"
+}
