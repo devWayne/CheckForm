@@ -1,17 +1,24 @@
-;
-(function(factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD
-        define(['$'], factory);
-    } else if (typeof exports === 'object') {
-        // CommonJS
-        factory(require('$'));
-    } else {
-        // Browser globals
-        factory($);
-    }
-}(function($) {
-    $.fn.check = function() {
-	var checkType = $(this).attr('check-type');
-    }
-}));
+/**
+ * @param {varType} options Description
+ * @return {void} description
+ */
+function Check(options){
+	
+	var defaultOpts = {
+	
+	}
+	this.config = merge{options,defaultOpts);
+
+	function merge(master,slave){
+		if(!slave) return master;
+		Object.keys(master).forEach(function(value,key){
+			slave[value] = master[value];
+		});
+		return slave;
+	}
+}
+
+check.prototype.run(){
+
+}
+
