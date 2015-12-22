@@ -3,11 +3,11 @@
  * @return {void} description
  */
 function Check(options){
-	
+	options = options || {};
 	var defaultOpts = {
 	
 	}
-	this.config = merge{options,defaultOpts);
+	this.config = merge(options,defaultOpts);
 
 	function merge(master,slave){
 		if(!slave) return master;
@@ -18,7 +18,13 @@ function Check(options){
 	}
 }
 
-check.prototype.run(){
-
+Check.prototype.num= function(){
+	var checkEl = "input[check-type='num']";
+	$(document).delegate(checkEl,'keyup',function(e){
+		var ipValue = $(this).val();
+		if(!$.isNumeric(ipValue)){
+			 $(this).val('');
+		}
+	});
 }
 
